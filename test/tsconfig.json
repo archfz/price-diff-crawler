@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "baseUrl": "../node_modules",
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "types": [
+      "node",
+      "mocha"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "price-diff-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "command": "node dist/index.js",
+    "build": "tsc",
+    "develop": "tsc -w",
+    "develop-test-unit": "TS_NODE_PROJECT=./test/tsconfig.json mocha -r ts-node/register -r @babel/register --colors --watch-extensions ts -w ./test/**/*.spec.ts",
+    "test": "TS_NODE_PROJECT=./test/tsconfig.json mocha -r ts-node/register -r @babel/register --colors \"./test/**/*.spec.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archfz/price-diff-crawler.git"
+  },
+  "author": "Fodor Zoltan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/archfz/price-diff-crawler/issues"
+  },
+  "homepage": "https://github.com/archfz/price-diff-crawler#readme",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.23",
+    "chai": "^4.2.0",
+    "chromedriver": "^83.0.1",
+    "commander": "^5.1.0",
+    "inversify": "^5.0.1",
+    "mocha": "^8.0.1",
+    "pretty-error": "^2.1.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite": "^4.0.11",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}
