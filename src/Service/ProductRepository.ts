@@ -1,5 +1,7 @@
 import FinalProductInterface from "../Model/FinalProductInterface";
 
+
+
 export default class ProductRepository {
   public save(product: FinalProductInterface): Promise<any> {
     // @TODO: Implement.
